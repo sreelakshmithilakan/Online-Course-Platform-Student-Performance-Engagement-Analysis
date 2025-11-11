@@ -1,5 +1,4 @@
-# DA-Mini-Project
-Data Analytics Mini Project on **_Online Course Platform: Student Performance & Engagement Analysis_**
+Project on **_Online Course Platform: Student Performance & Engagement Analysis_**
 
 **Analysis Summary: Student Performance & Engagement**
 
