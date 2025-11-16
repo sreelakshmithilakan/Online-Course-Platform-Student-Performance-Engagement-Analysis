@@ -1,108 +1,98 @@
-Project on **_Online Course Platform: Student Performance & Engagement Analysis_**
+# 📚 Online Course Platform: Student Performance & Engagement Analysis  
+### Power BI Dashboard & Excel Data Preparation
 
-**Analysis Summary: Student Performance & Engagement**
+---
 
-This project analyzes how students engage with online courses and what factors contribute to successful course completion and satisfaction. The analysis focuses on performance patterns, engagement behavior, and demographic impact using both cleaned data and interactive visualizations.
+## Analysis Summary
+This project explores how students engage with online courses and identifies the factors that contribute to successful course completion and satisfaction. It highlights performance patterns, engagement behavior, and demographic influences using cleaned datasets and interactive Power BI visualizations.
 
-**Core Analysis Objectives:**
+---
 
-**1. Student Engagement Analysis**
+## 🎓 Core Analysis Objectives
 
-Measure how much time students are investing (Time_Spent) and how it correlates with their course progress.
+### 1️. Student Engagement Analysis
+- Measure time invested (Time_Spent) and its correlation with course progress  
+- Categorize students by engagement level (Low / Medium / High)  
+- Evaluate session attendance to understand consistency in learning  
 
-Categorize students by engagement level (Low, Medium, High).
+### 2️. Performance Evaluation
+- Identify high-performing students (Completion Status + High Ratings)  
+- Analyze progress % vs. rating to understand satisfaction vs effort  
+- Detect inconsistencies (e.g., completed course but low rating)  
 
-Evaluate session attendance to see how consistent participation affects outcomes.
+### 3️. Demographic Insights
+- Analyze engagement trends across age groups  
+- Compare completion rates across countries  
+- Evaluate gender distribution and performance impact  
 
-**2. Performance Evaluation**
+### 4️. Course & Category Performance
+- Identify top-performing course categories  
+- Detect courses with high enrollment but low retention  
+- Compare instructor and course-level ratings  
 
-Identify high-performing students based on completion status and feedback ratings.
+### 5️. Enrollment Trends
+- Track month-wise enrollment patterns  
+- Identify seasonal variations and marketing impact  
 
-Analyze the relationship between progress % and rating to understand satisfaction vs. effort.
+### 6️. Feedback Quality
+- Analyze feedback score distribution (1–5)  
+- Identify consistently high- or low-rated courses/instructors  
 
-Detect students who completed the course but gave poor ratings, or vice versa.
+---
 
-**3. Demographic Trends**
+## 💡 Key Questions Answered
+- What defines a high-performing student?  
+- Which course categories drive the highest success and satisfaction?  
+- Is there a strong link between time invested and outcomes?  
+- How does engagement vary across age, country, or gender?  
+- What improvements can enhance underperforming courses?  
 
-Understand how age groups (e.g., students, early career professionals) engage differently.
+---
 
-Compare completion rates by country (e.g., India vs. others) to uncover geographic trends.
+## 🧹 Process Overview
 
-Analyze gender distribution and its impact on course performance, if any.
+### 📘 Excel – Data Cleaning & Preparation
+- Normalized Name, Email, Age, Time_Spent  
+- Cleaned Country, Gender, Completed fields  
+- Extracted attendance count from comma-separated date strings  
 
-**4. Course & Category Performance**
+**Created Columns:**
+- `Experience_Level`  
+- `Engagement_Level`  
+- `High_Performer` flag  
 
-Identify which courses and categories (e.g., Data Science, Business) have the highest completion rates and ratings.
+---
 
-See which courses attract more students but fail to retain them (low progress/high dropout).
+### 📊 Power BI – Interactive Dashboard
+**Includes:**  
+- KPI Cards (Total Students, Avg Rating, Completion Rate, Progress)  
+- Category & Country performance visuals  
+- Engagement heatmap (attendance + time spent)  
+- Feedback distribution analysis  
+- Dynamic slicers & drill-through pages  
 
-**5. Enrollment Trends**
+**Custom DAX Measures:**  
+- Completion % by Category  
+- Avg Time Spent per Course  
+- Progress–Rating Correlation  
 
-Track how enrollment varies over time—monthly trends may reflect marketing success, seasonal interest, or drop-off patterns.
+---
 
-**6. Feedback Quality**
+## 📁 Contents
+- 📘 Excel File – Cleaned dataset & transformations  
+- 📊 PBIX File – Interactive Power BI dashboard  
+- 🖼️ Dashboard Screenshots  
 
-Analyze distribution of feedback scores (1 to 5).
+---
 
-Identify which courses or instructors consistently receive high or low ratings.
+## 🛠️ Tools Used
+- **Excel**  
+- **Power BI**  
+- **DAX**  
 
-**7. Key Insights Expected:**
+---
 
-a) What defines a high-performing student?
+## 🌐 Domain
+**E-Learning · EdTech Analytics · Student Behavior Analysis**
 
-b) Which course categories are most effective or popular?
-
-c) Is there a clear link between time invested and learning outcomes?
-
-d) Do engagement patterns vary across age groups, countries, or gender?
-
-e) What improvements can be made in underperforming courses?
-
-**Process:**
-
-**Excel – Data Cleaning & Preparation**
-
-Normalized inconsistent formats in Name, Email, Time_Spent, and Age
-
-Standardized and cleaned Gender, Country, and Completed fields
-
-Extracted session attendance count from comma-separated date strings
-
-**Created new columns:**
-
-Experience_Level (based on Age)
-
-Engagement_Level (based on Time Spent + Progress)
-
-High Performer flag (Completed + High Feedback)
-
-**Power BI – Interactive Dashboard**
-
-Overview KPIs:  Total students, avg. rating, completion rate, avg. progress
-
-Category Analysis:  Course category performance, completion rate by country, feedback vs. course matrix
-
-Engagement Heatmap:   Visualizing attendance and time spent patterns
-
-Custom DAX Measures:
-
-Completion % by category
-
-Avg. time spent per course
-
-Correlation between progress and rating (scatter plot)
-
-Includes drill-throughs, bookmarks and slicers for dynamic filtering by course, country, and experience level.
-
-**Contents:** 
-
-Microsoft Excel file – Advanced Cleaning Tasks
-
-Power BI file – Advanced Dashboard Tasks
-
-Power BI Dashboard Screenshots
-
-**Tools Used:**  Excel, Power BI, DAX
-
-**Domain:**  E-Learning, EdTech Analytics, Student Behavior Analysis
-
+---
